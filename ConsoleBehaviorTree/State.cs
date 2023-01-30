@@ -10,6 +10,7 @@ namespace ConsoleBehaviorTree
     {
         Running,
         Success,
+        Aborted,
         Failed
     }
 }

@@ -1,16 +1,18 @@
-﻿namespace ConsoleBehaviorTree
+﻿namespace ConsoleBehaviorTree.Nodes
 {
     public abstract class Node
     {
         protected bool started;
         public State state;
         public Node parent;
+        public bool isRoot;
 
-        public Node() 
-        { 
+        public Node()
+        {
             started = false;
             state = State.Running;
             parent = null;
+            isRoot = false;
         }
 
         public State Update()

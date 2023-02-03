@@ -29,7 +29,7 @@ namespace ConsoleBehaviorTree.Nodes
                     break;
             }
 
-            if (current > children.Count)
+            if (current > children.Count - 1)
             {
                 return State.Success;
             }
@@ -38,7 +38,7 @@ namespace ConsoleBehaviorTree.Nodes
 
         protected override void Exit()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Exiting sequence Node");
         }
     }
 }

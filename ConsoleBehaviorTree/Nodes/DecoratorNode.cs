@@ -14,5 +14,10 @@ namespace ConsoleBehaviorTree.Nodes
         {
             child = null;
         }
+
+        public void AddChild(Node childToAdd)
+        {
+            child = childToAdd;
+        }
     }
 }

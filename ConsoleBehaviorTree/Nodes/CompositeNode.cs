@@ -8,7 +8,7 @@ namespace ConsoleBehaviorTree.Nodes
 {
     public abstract class CompositeNode : Node
     {
-        public List<Node> children { get; private set; }
+        public List<Node> children;
 
         public CompositeNode()
         {
